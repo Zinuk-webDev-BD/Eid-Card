@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premium Eid Card</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- html2canvas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+  <canvas id="particles"></canvas>
+
+  <div class="toggle-mode">
+    <button id="themeBtn">🌙</button>
+  </div>
+
+  <div class="moon"></div>
+
+  <div class="card" id="card">
+
+    <div class="top">
+      <h1>EID MUBARAK 🌙</h1>
+    </div>
+
+    <div class="photo-box">
+      <img
+        id="profilePic"
+        src="https://i.ibb.co/7QpKsCX/girl.jpg"
+        alt=""
+      >
+    </div>
+
+    <div class="content">
+
+      <input type="text" id="nameInput" placeholder="Enter Your Name">
+
+      <h2 id="greetingText">
+        Eid Mubarak, Friend ✨
+      </h2>
+
+      <p>
+        May Allah fill your life with happiness, peace,
+        and endless blessings.
+      </p>
+
+      <div class="timer-box">
+        <h3>⏳ Eid Countdown</h3>
+        <div id="countdown"></div>
+      </div>
+
+      <div class="buttons">
+
+        <label class="upload-btn">
+          Upload Photo
+          <input type="file" id="uploadPhoto" hidden>
+        </label>
+
+        <button id="musicBtn">🎵 Play Music</button>
+
+        <button id="downloadBtn">
+          📸 Download
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <audio id="eidMusic" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
