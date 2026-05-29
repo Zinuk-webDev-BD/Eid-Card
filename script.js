@@ -48,7 +48,7 @@ uploadPhoto.addEventListener("change", (e)=>{
 });
 
 
-// Music
+// Music Player Toggle
 
 const music =
 document.getElementById("eidMusic");
@@ -82,7 +82,7 @@ musicBtn.addEventListener("click", ()=>{
 });
 
 
-// Countdown
+// Countdown Timer
 
 const countdown =
 document.getElementById("countdown");
@@ -117,7 +117,7 @@ setInterval(()=>{
 },1000);
 
 
-// Download Card
+// Download Card as Image
 
 const downloadBtn =
 document.getElementById("downloadBtn");
@@ -142,7 +142,7 @@ downloadBtn.addEventListener("click", ()=>{
 });
 
 
-// Dark Light Mode
+// Dark / Light Mode Toggle
 
 const themeBtn =
 document.getElementById("themeBtn");
@@ -160,7 +160,7 @@ themeBtn.addEventListener("click", ()=>{
 });
 
 
-// 3D Effect
+// 3D Card Mouse Effect
 
 const card =
 document.querySelector(".card");
@@ -179,7 +179,7 @@ document.addEventListener("mousemove",(e)=>{
 });
 
 
-// Islamic Particle Animation
+// Islamic Particle Background Animation
 
 const canvas =
 document.getElementById("particles");
