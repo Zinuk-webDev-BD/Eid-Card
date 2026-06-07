@@ -5,6 +5,8 @@
   font-family:'Poppins',sans-serif;
 }
 
+/* body */
+
 body{
   min-height:100vh;
   display:flex;
@@ -40,7 +42,7 @@ body.light{
   cursor:pointer;
   font-size:20px;
 }
-
+/* moon design */
 .moon{
   position:absolute;
   width:180px;
