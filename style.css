@@ -1,3 +1,6 @@
+/* =========================
+   GLOBAL RESET & FONT SETUP
+========================= */
 *{
   margin:0;
   padding:0;
@@ -5,8 +8,9 @@
   font-family:'Poppins',sans-serif;
 }
 
-/* body */
-
+/* =========================
+   BODY STYLING (DARK MODE DEFAULT)
+========================= */
 body{
   min-height:100vh;
   display:flex;
@@ -17,10 +21,14 @@ body{
   transition:0.4s;
 }
 
+/* LIGHT MODE BODY */
 body.light{
   background:linear-gradient(135deg,#dff6ff,#ffffff,#cceeff);
 }
 
+/* =========================
+   PARTICLES BACKGROUND
+========================= */
 #particles{
   position:fixed;
   width:100%;
@@ -28,6 +36,9 @@ body.light{
   z-index:-1;
 }
 
+/* =========================
+   THEME TOGGLE BUTTON
+========================= */
 .toggle-mode{
   position:fixed;
   top:20px;
@@ -42,7 +53,10 @@ body.light{
   cursor:pointer;
   font-size:20px;
 }
-/* moon design */
+
+/* =========================
+   MOON DESIGN (DECORATION)
+========================= */
 .moon{
   position:absolute;
   width:180px;
@@ -54,6 +68,7 @@ body.light{
   box-shadow:0 0 50px #ffd369;
 }
 
+/* moon shadow cut effect */
 .moon::before{
   content:'';
   position:absolute;
@@ -65,6 +80,9 @@ body.light{
   left:30px;
 }
 
+/* =========================
+   MAIN CARD CONTAINER
+========================= */
 .card{
   width:380px;
   backdrop-filter:blur(15px);
@@ -77,6 +95,7 @@ body.light{
   box-shadow:0 15px 40px rgba(0,0,0,0.5);
 }
 
+/* floating animation */
 @keyframes float{
   0%,100%{
     transform:translateY(0px);
@@ -86,6 +105,9 @@ body.light{
   }
 }
 
+/* =========================
+   TOP HEADER SECTION
+========================= */
 .top{
   height:170px;
   background:linear-gradient(135deg,#00b894,#00cec9);
@@ -100,6 +122,9 @@ body.light{
   text-align:center;
 }
 
+/* =========================
+   PROFILE IMAGE SECTION
+========================= */
 .photo-box{
   width:140px;
   height:140px;
@@ -115,6 +140,9 @@ body.light{
   object-fit:cover;
 }
 
+/* =========================
+   MAIN CONTENT AREA
+========================= */
 .content{
   padding:25px;
   text-align:center;
@@ -140,6 +168,9 @@ body.light{
   color:#ddd;
 }
 
+/* =========================
+   TIMER BOX SECTION
+========================= */
 .timer-box{
   margin-top:20px;
   padding:15px;
@@ -153,6 +184,9 @@ body.light{
   font-weight:700;
 }
 
+/* =========================
+   BUTTONS SECTION
+========================= */
 .buttons{
   display:flex;
   flex-wrap:wrap;
@@ -178,6 +212,9 @@ body.light{
   transform:scale(1.06);
 }
 
+/* =========================
+   LIGHT MODE ADJUSTMENTS
+========================= */
 body.light .card{
   background:rgba(255,255,255,0.5);
   color:black;
@@ -191,6 +228,9 @@ body.light .content p{
   color:#333;
 }
 
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
 @media(max-width:500px){
 
   .card{
@@ -210,5 +250,4 @@ body.light .content p{
     width:100px;
     height:100px;
   }
-
 }
